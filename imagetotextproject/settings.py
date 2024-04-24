@@ -22,7 +22,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['image2textai.com']
+ALLOWED_HOSTS = ['image2textai.com','www.image2textai.com']
 
 # Application definition
 
