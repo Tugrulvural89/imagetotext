@@ -67,14 +67,14 @@
     <h3 class="fs-3">Content</h3>
         <p class="form-control text-area" id="textArea">{{ output_text|safe|linebreaksbr }}</p>
         <div class="d-flex justify-content-center">
-            <button id="copyButton" class="btn btn-primary mt-2 mx-2">Kopyala</button>
+            <button id="copyButton" class="btn btn-primary mt-2 mx-2">Copy</button>
             <form method="GET" action="{% url 'download_txt' %}" class="mx-2">
                 <input type="hidden" name="text" value="{{ output_text|safe|linebreaksbr }}">
-                <button type="submit" class="btn btn-info mt-2">TXT olarak indir</button>
+                <button type="submit" class="btn btn-info mt-2">Txt Download</button>
             </form>
             <form method="GET" action="{% url 'download_docx' %}"  class="mx-2">
                 <input type="hidden" name="text" value="{{ output_text|safe|linebreaksbr }}">
-                <button type="submit" class="btn btn-info mt-2">Word olarak indir</button>
+                <button type="submit" class="btn btn-info mt-2">Docx Download</button>
             </form>
         </div>
     </div>
