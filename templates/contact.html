@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+
+ {% block title %}<title>Contact Us | image2textai.com</title> {% endblock title %}
+   {% block meta_description %}  <meta name="description" content="Have questions or need support?
+   Contact the image2textai.com team today. We're here to help you with your image enhancement
+    needs and provide personalized assistance."> {% endblock meta_description %}
+
+ {% block meta_title %}  <meta name="title" content="Get in Touch | image2textai.com"> {% endblock meta_title %}
+
+
+
+{% block content %}
+
+    <div class="contact-header p-5 text-center items-center mb-5" style="background-image: url('{% static "contactbg.png" %}');background-size: cover;background-position: center;background-repeat: no-repeat;">
+<div class="container">
+
+           <div style="height: 100px;"></div>
+
+
+
+
+            <!-- templates/contact.html -->
+        <p class="col col-12 col-md-6 fs-4 text-capitalize text-muted text-start">
+        We are here to help!
+
+        </p>
+    <p class="col col-12 col-md-6 fs-4 text-capitalize text-muted text-start">
+        Please let us know if you have any questions or suggestions and we will get back to you.
+
+        </p>
+
+
+    </div>
+</div>
+<div class="container">
+<form method="post" action="">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% bootstrap_button button_type='submit' content='Send' size='lg' %}
+</form>
+
+</div>
+
+<div class="container">
+    <div class="row mb-4 mt-4">
+        <div class="col text-center">
+            <h1 class="h2">How Can You Extract Text from Images and Save in Various Formats?</h1>
+        </div>
+    </div>
+    <!-- Metin ve Görsel İçeren Flex Container -->
+    <div class="row mb-4 mt-4">
+    <div class="col-md-6 align-items-center">
+
+
+    <p><strong>Introduction</strong></p>
+    <p>In today’s digital world, extracting text from images is a valuable skill that can streamline work processes, enhance accessibility, and unlock the information trapped within static visuals. Whether you're handling scanned documents, screenshots, or printed photos, converting these images to editable text formats such as Word, TXT, or HTML can be immensely useful. But how exactly can this be achieved easily and efficiently?</p>
+
+    <p><strong>Step 1: Understanding Image Text Extraction</strong></p>
+    <p>Image text extraction, often referred to as Optical Character Recognition (OCR), involves analyzing the characters in an image and translating them into text that machines can read and edit. Advanced AI technologies have significantly improved the accuracy and speed of OCR, making it more accessible to individuals and businesses alike.</p>
+
+    <p><strong>Step 2: Choosing the Right Tools</strong></p>
+    <p>To start extracting text from images, you'll need the right tools. There are many software options available, ranging from desktop applications to web-based platforms. For a seamless experience, our website offers a robust solution that allows users to upload images and extract text directly from our intuitive interface.</p>
+
+    <p><strong>Step 3: How to Use Our Website for Text Extraction</strong></p>
+    <p>Using our website for text extraction is simple:</p>
+    <ol>
+        <li>Visit our homepage and locate the text extraction tool.</li>
+        <li>Upload the image from which you want to extract text.</li>
+        <li>Select the format in which you would like the extracted text to be saved—Word, TXT, or HTML.</li>
+        <li>Click on the ‘Extract’ button and let our AI-powered tool do the rest.</li>
+        <li>Download the extracted text in your chosen format.</li>
+    </ol>
+
+    <p><strong>Step 4: Benefits of Text Extraction</strong></p>
+    <p>Extracting text from images not only saves time but also increases productivity. It eliminates the need for manual transcription, reduces errors, and allows for easy data management and accessibility. In sectors like legal, educational, and historical research, these capabilities are particularly transformative.</p>
+
+    <p><strong>Conclusion</strong></p>
+    <p>With the right tools and a few clicks, extracting text from images and converting it into various editable formats can be done effortlessly. Our platform is designed to help you achieve this with maximum efficiency. Try it today and experience how our AI-driven solutions can facilitate your document management needs.</p>
+
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+        <img src="{% static '1.png' %}" alt="Transformed Image" class="img-fluid">
+    </div>
+</div>
+
+   <div class="row mb-4">
+    <div class="col text-center">
+        <h1 class="h2">Why Is Text Extraction from Images Important for Your Business?</h1>
+    </div>
+</div>
+<!-- Text and Image Flex Container -->
+<div class="row">
+    <div class="col-md-6 d-flex justify-content-center">
+        <img src="{% static '2.png' %}" alt="Resim" class="img-fluid" style="max-width: 50%">
+    </div>
+    <div class="col-md-6 align-items-center">
+    <p>As businesses digitize more of their archives and daily operations, the ability to efficiently convert images into editable, searchable text formats is becoming crucial. Text extraction, or Optical Character Recognition (OCR), plays a vital role in data processing and accessibility, affecting everything from streamlined document management to enhanced data security.</p>
+
+    <p>Here are some key benefits that text extraction can offer your business:</p>
+    <ul>
+        <li><strong>Increased Efficiency:</strong> Automating the conversion of scanned documents and images into text reduces manual data entry, saving time and minimizing human error.</li>
+        <li><strong>Improved Accessibility:</strong> Extracted text can be easily searched, indexed, and accessed, making it more usable for all members of your organization.</li>
+        <li><strong>Enhanced Compliance:</strong> Many industries face stringent regulations on how documents must be stored and processed. Extracting text from images ensures that all information is accounted for and can be audited effectively.</li>
+        <li><strong>Cost Reduction:</strong> Reducing reliance on physical storage and manual processes cuts costs and allows resources to be redirected to more critical areas of business.</li>
+    </ul>
+
+    <p>By embracing OCR technology, businesses can not only enhance their operational efficiency but also gain a competitive edge in a data-driven world. Explore our advanced text extraction tools on this website and see how they can transform your document management practices.</p>
+
+    </div>
+</div>
+
+</div>
+{% endblock content %}
